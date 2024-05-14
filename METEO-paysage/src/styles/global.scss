@@ -1,0 +1,233 @@
+html,
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(113, 179, 233), rgb(205, 229, 245));
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+.app{
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  transition: all 0.1s ease;
+}
+.meteo-container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.meteo-layout {
+  // background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  .meteo-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    span {
+      font-size: 2em;
+    }
+  }
+  .meteo-content {
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    .meteo-main {
+      // background-color: green;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .meteo-current {
+        // background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 2em;
+        }
+        .meteo-info{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .meteo-additional {
+        // background-color: yellow;
+        display: flex;
+        justify-content: center;
+        .meteo-wind {
+          justify-content: space-between;
+          display: flex;
+          // background-color: purple;
+          display: flex;
+          .meteo-wind-speed {
+            // background-color: orange;
+            display: flex;
+            align-items: center;
+          }
+          .meteo-humidity {
+            // background-color: orange;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .meteo-forecast {
+      // background-color: blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .meteo-daily {
+        // background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .meteo-daily-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .meteo-weekly-forcast {
+        // background-color: purple;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .meteo-weekly-item {
+          display: flex;
+          flex-direction: column;
+          .weekly-item-celsus{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .current-hour {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
+
+.meteo-box {
+  .meteo-header {
+  }
+  .meteo-content {
+    .meteo-main {
+      width: 40%;
+      background-color: white;
+      .meteo-current {
+        img {
+          width: 8em;
+        }
+      }
+      .meteo-additional {
+        img {
+          width: 3em;
+        }
+        .meteo-wind {
+          width: 100%;
+        }
+        .meteo-humidity {
+        }
+      }
+    }
+    .meteo-forecast {
+      // background-color: blueviolet;
+      width: 56%;
+
+      .meteo-daily {
+        width: 100%;
+        height: 55%;
+        .meteo-daily-item {
+          width: 20%;
+          height: 100%;
+          background-color: white;
+        }
+        img{
+          width: 4em;
+        }
+      }
+      .meteo-weekly-forcast {
+        width: 100%;
+        height: 50%;
+        // background-color: red;
+        padding: 0.5em;
+
+        .meteo-weekly-item {
+          height: 80%;
+          justify-content: space-between;
+          img{
+            width: 2.5em;
+          }
+        }
+      }
+    }
+  }
+  .current-hour {
+  }
+}
+
+.meteo-style {
+  padding: 2em;
+  .meteo-header {
+    padding: 1em;
+  }
+  .meteo-content {
+    .meteo-main {
+      padding: 3em;
+      border-radius: 1em;
+      background-color: white;
+      .meteo-current {
+        // margin-bottom: 10vh;
+        .meteo-icon {
+          margin-right: 2em;
+        }
+      }
+      .meteo-additional {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+        .meteo-wind {
+          img{
+            margin-right: 1em;
+          }
+        }
+        .meteo-humidity {
+        }
+      }
+    }
+    .meteo-forecast {
+      .meteo-daily {
+        .meteo-daily-item {
+          padding: 1em;
+          border-radius: 1em;
+        }
+      }
+      .meteo-weekly-forcast {
+        // margin-top: 1em;
+        .meteo-weekly-item {
+        }
+      }
+    }
+  }
+  .current-hour {
+    padding: 1em;
+    span{
+      font-size: 1.5em;
+    }
+  }
+}

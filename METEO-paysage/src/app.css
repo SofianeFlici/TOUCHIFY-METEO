@@ -1,0 +1,190 @@
+html,
+body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(113, 179, 233), rgb(205, 229, 245));
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  transition: all 0.1s ease;
+}
+
+.meteo-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meteo-layout {
+  display: flex;
+  flex-direction: column;
+}
+.meteo-layout .meteo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.meteo-layout .meteo-header span {
+  font-size: 2em;
+}
+.meteo-layout .meteo-content {
+  display: flex;
+  justify-content: space-between;
+}
+.meteo-layout .meteo-content .meteo-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-current span {
+  font-size: 2em;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-current .meteo-info {
+  display: flex;
+  flex-direction: column;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional {
+  display: flex;
+  justify-content: center;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind {
+  justify-content: space-between;
+  display: flex;
+  display: flex;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind .meteo-wind-speed {
+  display: flex;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind .meteo-humidity {
+  display: flex;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-daily {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item {
+  display: flex;
+  flex-direction: column;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item .weekly-item-celsus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meteo-layout .current-hour {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.meteo-box .meteo-content .meteo-main {
+  width: 40%;
+  background-color: white;
+}
+.meteo-box .meteo-content .meteo-main .meteo-current img {
+  width: 8em;
+}
+.meteo-box .meteo-content .meteo-main .meteo-additional img {
+  width: 3em;
+}
+.meteo-box .meteo-content .meteo-main .meteo-additional .meteo-wind {
+  width: 100%;
+}
+.meteo-box .meteo-content .meteo-forecast {
+  width: 56%;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-daily {
+  width: 100%;
+  height: 55%;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-daily img {
+  width: 4em;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-weekly-forcast {
+  width: 100%;
+  height: 50%;
+  padding: 0.5em;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item {
+  height: 80%;
+  justify-content: space-between;
+}
+.meteo-box .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item img {
+  width: 2.5em;
+}
+.meteo-style {
+  padding: 2em;
+}
+.meteo-style .meteo-header {
+  padding: 1em;
+}
+.meteo-style .meteo-content .meteo-main {
+  padding: 3em;
+  border-radius: 1em;
+  background-color: white;
+}
+.meteo-style .meteo-content .meteo-main .meteo-current .meteo-icon {
+  margin-right: 2em;
+}
+.meteo-style .meteo-content .meteo-main .meteo-additional {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.meteo-style .meteo-content .meteo-main .meteo-additional .meteo-wind img {
+  margin-right: 1em;
+}
+.meteo-style .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item {
+  padding: 1em;
+  border-radius: 1em;
+}
+.meteo-style .current-hour {
+  padding: 1em;
+}
+.meteo-style .current-hour span {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=app.css.map */
