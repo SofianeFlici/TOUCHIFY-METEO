@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="meteo-container meteo-layout meteo-box meteo-style">
+<div class="portrait meteo-container meteo-layout meteo-box meteo-style">
   <div class="meteo-header">
     <span>Aix-en-Provence</span>
     <p>mercredi 24 avril 2024</p>
@@ -34,79 +34,79 @@
         <div class="meteo-daily-item">
           <span>08:00</span>
           <img src="/pictos/Brume_jour.svg" alt="" />
-          <span>15°C</span>
+          <p>15°C</p>
         </div>
         <div class="meteo-daily-item">
           <span>08:00</span>
           <img src="/pictos/Brume_jour.svg" alt="" />
-          <span>15°C</span>
+          <p>15°C</p>
         </div>
         <div class="meteo-daily-item">
           <span>08:00</span>
           <img src="/pictos/Brume_jour.svg" alt="" />
-          <span>15°C</span>
+          <p>15°C</p>
         </div>
         <div class="meteo-daily-item">
           <span>08:00</span>
           <img src="/pictos/Brume_jour.svg" alt="" />
-          <span>15°C</span>
+          <p>15°C</p>
         </div>
       </div>
       <div class="meteo-weekly-forcast">
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Lun.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Mar.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Mer.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Jeu.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Ven.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Sam.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
         <div class="meteo-weekly-item">
-          <span>Lundi</span>
+          <span>Dim.</span>
           <img src="/pictos/Temperature-chute.svg" alt="" />
           <div class="weekly-item-celsus">
-            <span>15°C</span>
-            <span>18°C</span>
+            <p>15°C</p>
+            <p>18°C</p>
           </div>
         </div>
       </div>

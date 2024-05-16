@@ -26,6 +26,58 @@ body {
   justify-content: center;
 }
 
+body .portrait .meteo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+body .portrait .meteo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .portrait.meteo-box .meteo-content .meteo-main {
+  width: 80%;
+  margin-bottom: 1em;
+}
+body .portrait.meteo-box .meteo-content .meteo-main .meteo-current img {
+  width: 5em;
+}
+body .portrait.meteo-box .meteo-content .meteo-main .meteo-additional img {
+  width: 2em;
+}
+body .portrait.meteo-box .meteo-content .meteo-forecast {
+  width: 80%;
+}
+body .portrait.meteo-box .meteo-content .meteo-forecast .meteo-daily img {
+  width: 2em;
+}
+body .portrait.meteo-box .meteo-content .meteo-forecast .meteo-weekly-forcast {
+  padding: 0em;
+  margin-top: 1.6em;
+}
+body .portrait.meteo-box .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item img {
+  width: 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+}
+body .portrait.meteo-style {
+  padding: 1em;
+}
+body .portrait.meteo-style .meteo-content .meteo-main {
+  padding: 1.5em;
+}
+body .portrait.meteo-style .meteo-content .meteo-main .meteo-current {
+  display: flex;
+  justify-content: space-around;
+}
+body .portrait.meteo-style .meteo-content .meteo-main .meteo-additional .meteo-wind {
+  justify-content: space-around;
+  display: flex;
+}
+
 .meteo-layout {
   display: flex;
   flex-direction: column;
@@ -37,7 +89,11 @@ body {
   align-items: end;
 }
 .meteo-layout .meteo-header span {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+.meteo-layout .meteo-header p {
+  font-size: 0.8em;
+  opacity: 0.7;
 }
 .meteo-layout .meteo-content {
   display: flex;
@@ -60,14 +116,26 @@ body {
   display: flex;
   flex-direction: column;
 }
+.meteo-layout .meteo-content .meteo-main .meteo-current .meteo-info .meteo-description {
+  font-size: 1em;
+  align-self: self-start;
+  margin-left: 0.3em;
+  opacity: 0.7;
+}
 .meteo-layout .meteo-content .meteo-main .meteo-additional {
   display: flex;
   justify-content: center;
 }
 .meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  display: flex;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind span {
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+.meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind span img {
+  opacity: 1;
 }
 .meteo-layout .meteo-content .meteo-main .meteo-additional .meteo-wind .meteo-wind-speed {
   display: flex;
@@ -94,6 +162,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.meteo-layout .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item span {
+  font-size: 0.7em;
+  opacity: 0.7;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item img {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item p {
+  font-size: 1em;
+}
 .meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast {
   display: flex;
   justify-content: space-between;
@@ -102,6 +181,14 @@ body {
 .meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item span {
+  font-size: 0.7em;
+}
+.meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item p {
+  font-size: 0.7em;
+  opacity: 0.7;
 }
 .meteo-layout .meteo-content .meteo-forecast .meteo-weekly-forcast .meteo-weekly-item .weekly-item-celsus {
   display: flex;
@@ -163,22 +250,25 @@ body {
 }
 .meteo-style .meteo-content .meteo-main {
   padding: 3em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background-color: white;
 }
 .meteo-style .meteo-content .meteo-main .meteo-current .meteo-icon {
   margin-right: 2em;
 }
 .meteo-style .meteo-content .meteo-main .meteo-additional {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .meteo-style .meteo-content .meteo-main .meteo-additional .meteo-wind img {
   margin-right: 1em;
 }
+.meteo-style .meteo-content .meteo-main .meteo-additional .meteo-wind .meteo-wind-speed {
+  margin-right: 2em;
+}
 .meteo-style .meteo-content .meteo-forecast .meteo-daily .meteo-daily-item {
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 .meteo-style .current-hour {
   padding: 1em;
